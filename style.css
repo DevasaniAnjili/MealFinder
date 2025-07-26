@@ -1,0 +1,18 @@
+header{
+    background-color: rgb(234, 96, 10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h2{
+    color: white;
+}
+.site-name{
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+    gap: 5px;
+}
+nav i{
+    padding-right: 90px;
+}
