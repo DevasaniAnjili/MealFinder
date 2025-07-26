@@ -72,3 +72,22 @@ nav i{
   background-color: white;
   color: #f26c1d;
 }
+.about-vegetarian{
+    background-color: white;
+    border: 2px solid  #f1a97e;
+    margin: 35px 60px;
+}
+.about-vegetarian h2{
+    color: #f26c1d;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: Georgia, serif;
+}
+.about-vegetarian p{
+    color: black;
+    padding-left:10px ;
+    padding-right: 10px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    line-height: 1.6;
+}
