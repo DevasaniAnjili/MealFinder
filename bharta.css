@@ -181,4 +181,29 @@ nav i{
   font-weight: bold;
   margin-right: 10px;
 }
+.measure-section h4{
+    padding-left: 40px;
+    font-size: 20px;
 
+}
+.measurement-list{
+    display: flex;
+    column-gap: 300px;
+    row-gap: 30px;
+    background-color:rgb(248, 246, 246);
+     box-shadow: 0px 4px 8px rgba(241, 226, 226, 0.2);
+     border: 0.5px solid rgb(248, 246, 246);
+    margin: 20px 40px;
+}
+.measurement-list-col{
+    list-style: none;
+}
+.measurement-list-col li{
+    margin-bottom: 15px;
+    font-size: 15px;
+    
+}
+.measurement-list-col i{
+    color: #f26c1d;
+    margin-right: 5px;
+}
