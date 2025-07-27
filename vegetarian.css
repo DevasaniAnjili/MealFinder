@@ -1,5 +1,5 @@
 header{
-    background-color: rgb(234, 96, 10);
+    background-color:#f26c1d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,7 +113,7 @@ nav i{
     row-gap: 15px;
 }
 .meal{
-    width: 200;
+    width: 200px;
     background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
