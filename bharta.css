@@ -88,14 +88,14 @@ nav i{
 .heading-section h4{
     padding-left: 5px;
 }
-.meal-details h2{
+.meal-details-heading h2{
      font-size: 20px;
     letter-spacing: 3px;
     font-weight: blod;
     position: relative;
     margin: 45px 50px;
 }
-.meal-details h2::after{
+.meal-details-heading h2::after{
     content: "";
     display: block;
     width: 70px;
@@ -103,3 +103,82 @@ nav i{
     background-color: #f26c1d;
     margin: 5px 0;
 }
+.meal-details{
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 30px 50px;
+}
+.details{
+    display: flex;
+    gap: 10px;
+    
+}
+.bharta-image img{
+    width: 480px;
+    object-fit: cover;
+    padding: 40px;
+}
+.right-side-details h3{
+    color: #f26c1d;
+    position: relative;
+    padding-top: 50px;
+}
+.right-side-details h3::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #f26c1d;
+    width: 530px;
+    height: 1px;
+    top:  85px;
+}
+.right-side-details p{
+    color: black;
+}
+.right-side-details .category{
+    margin-top: 40px;
+}
+.tags{
+    margin-top: 20px;
+}
+.tags .tag-name{
+    background-color: white;
+    color: #f26c1d;
+    border: 1px solid  #f26c1d;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+.ingredients-box{
+    background-color: #f26c1d;
+    color: white;
+    width: 530px;
+    padding: 10px;
+    margin-top: 30px;
+    padding-bottom: 20px
+
+    
+}
+.ingredients-box h4{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+
+}
+.number {
+  background-color: #1da4a6;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
