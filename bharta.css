@@ -229,6 +229,7 @@ nav i{
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
+  color: rgb(112, 100, 100);
 }
 .instruction-list li i {
   position: absolute;
