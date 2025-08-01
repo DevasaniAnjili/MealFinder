@@ -11,14 +11,51 @@ header{
 header h2{
     color: white;
 }
+@media (max-width: 768px) {
+    header {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 425px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+    }
+}
 .site-name{
     display: flex;
     align-items: center;
     margin-left: 90px;
     gap: 5px;
 }
+@media (max-width:768px){
+    .site-name {
+        margin-left: 20px;
+    }
+}
+@media (max-width:425px){
+    .site-name {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+}
 nav i{
     padding-right: 90px;
+}
+@media (max-width:768px){
+     nav i {
+        padding-right: 20px;
+    }
+}
+@media  (max-width:425px){
+    nav i {
+        padding: 0;
+        margin-top: 10px;
+    }
+
 }
 .search-section{
     background-image:linear-gradient(rgba(0, 0, 0, 0.6)),url("./assests/images/header-bg.jpg");
@@ -72,6 +109,59 @@ nav i{
   background-color: white;
   color: #f26c1d;
 }
+@media (max-width:768px){
+    .search-section {
+        height: 350px;
+    }
+
+    .search-section .search-here {
+        padding-top: 15%;
+    }
+
+    .search-here input {
+        margin-top: 30px;
+    
+    }
+
+    .search-here h2{
+    font-size: 25px;
+   }
+   .search-here p{
+    font-size: 15px;
+   }
+    .circle-button {
+        position: relative;
+        margin: 20px auto 0;
+        left: 0;
+    }
+}
+@media (max-width:425px){
+    .search-section {
+        height: 350px;
+    }
+
+    .search-section .search-here {
+        padding-top: 10%;
+    }
+
+    .search-here input {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+     .search-here h2{
+    font-size: 15px;
+   }
+   .search-here p{
+    font-size: 10px;
+   }
+
+    .circle-button {
+        margin-top: 15px;
+        left: 0;
+        position: relative;
+    }
+
+}
 .categories-section h2{
     font-size: 20px;
     letter-spacing: 3px;
@@ -80,7 +170,7 @@ nav i{
     margin: 45px 50px;
 }
 .categories-section h2::after{
-    content: "";
+    content: " ";
     display: block;
     width: 65px;
     height: 4px;
@@ -125,3 +215,42 @@ nav i{
     right: 7px;
     
 }
+@media (max-width:768px){
+    .categories-section h2 {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .category-items {
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 20px;
+        justify-items: center;
+    }
+
+    
+}
+@media (max-width:425px){
+    .categories-section h2 {
+        font-size: 18px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .category-items {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px;
+        row-gap: 15px;
+        column-gap: 10px;
+        justify-items: center;
+    }
+
+    .item {
+        width: 140px;
+    }
+
+    .item img:hover {
+        transform: scale(0.9); 
+    }
+}
+
+

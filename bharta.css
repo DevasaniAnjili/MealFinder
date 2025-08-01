@@ -11,14 +11,51 @@ header{
 header h2{
     color: white;
 }
+@media (max-width: 768px) {
+    header {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 425px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+    }
+}
 .site-name{
     display: flex;
     align-items: center;
     margin-left: 90px;
     gap: 5px;
 }
+@media (max-width:768px){
+    .site-name {
+        margin-left: 20px;
+    }
+}
+@media (max-width:425px){
+    .site-name {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+}
 nav i{
     padding-right: 90px;
+}
+@media (max-width:768px){
+     nav i {
+        padding-right: 20px;
+    }
+}
+@media  (max-width:425px){
+    nav i {
+        padding: 0;
+        margin-top: 10px;
+    }
+
 }
 .search-section{
     background-image:linear-gradient(rgba(0, 0, 0, 0.6)),url("./assests/images/header-bg.jpg");
@@ -72,6 +109,59 @@ nav i{
   background-color: white;
   color: #f26c1d;
 }
+@media (max-width:768px){
+    .search-section {
+        height: 350px;
+    }
+
+    .search-section .search-here {
+        padding-top: 15%;
+    }
+
+    .search-here input {
+        margin-top: 30px;
+    
+    }
+
+    .search-here h2{
+    font-size: 25px;
+   }
+   .search-here p{
+    font-size: 15px;
+   }
+    .circle-button {
+        position: relative;
+        margin: 20px auto 0;
+        left: 0;
+    }
+}
+@media (max-width:425px){
+    .search-section {
+        height: 350px;
+    }
+
+    .search-section .search-here {
+        padding-top: 10%;
+    }
+
+    .search-here input {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+     .search-here h2{
+    font-size: 15px;
+   }
+   .search-here p{
+    font-size: 10px;
+   }
+
+    .circle-button {
+        margin-top: 15px;
+        left: 0;
+        position: relative;
+    }
+
+}
 .heading-section{
     display: flex;
     align-items: center;
@@ -81,12 +171,29 @@ nav i{
     color: white;
 
 }
+
+
 .heading-section .fa-angles-right{
     font-size: medium;
     padding-left: 5px;
 }
 .heading-section h4{
     padding-left: 5px;
+}
+@media (max-width: 768px) {
+    .heading-section {
+        margin: 20px 30px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .heading-section {
+        margin: 15px;
+        font-size: 12px;
+        justify-content: center;
+        padding: 8px;
+        text-align: center;
+    }
 }
 .meal-details-heading h2{
      font-size: 20px;
@@ -161,6 +268,32 @@ nav i{
 
     
 }
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bharta-image img {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .right-side-details h3::after,
+    .ingredients-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .measurement-list {
+        flex-direction: column;
+        gap: 20px;
+        column-gap: 0;
+        padding: 20px;
+    }
+}
+
 .ingredients-box h4{
     font-size: 20px;
     margin-top: 10px;
@@ -171,6 +304,28 @@ nav i{
   row-gap: 10px;
 
 }
+@media (max-width: 480px) {
+    .bharta-image img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .right-side-details h3 {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .right-side-details h3::after {
+        width: 100%;
+    }
+
+    .ingredients-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+}
+
 .number {
   background-color: #1da4a6;
   color: white;
@@ -210,6 +365,16 @@ nav i{
     color: #f26c1d;
     margin-right: 5px;
 }
+@media (max-width:480px){
+.measurement-list {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .measurement-list-col li {
+        font-size: 13px;
+    }
+}
 .instructions-section h4{
     padding-left: 40px;
     font-size: 20px;
@@ -224,6 +389,20 @@ nav i{
   list-style:none;
   padding-left: 40px;
   line-height: 1.7;
+}
+@media (max-width: 768px) {
+    .instruction-list {
+        padding-left: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .instruction-list {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+    .instructions-section h4 {
+        font-size: 18px;
+    }
 }
 .instruction-list li {
   position: relative;
@@ -296,4 +475,36 @@ nav i{
     top: 5px;
     right: 7px;
     
+}
+@media (max-width: 768px) {
+    .category-items {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px 30px;
+        gap: 15px;
+        justify-items: center;
+    }
+    .item {
+        width: 150px;
+    }
+}
+@media (max-width: 480px) {
+    .categories-section h2 {
+        text-align: center;
+        margin: 20px 10px;
+    }
+
+    .category-items {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px;
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .item {
+        width: 130px;
+    }
+
+    .item img:hover {
+        transform: scale(1); /* Disable hover zoom on mobile */
+    }
 }

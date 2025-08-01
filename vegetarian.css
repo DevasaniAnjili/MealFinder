@@ -11,15 +11,53 @@ header{
 header h2{
     color: white;
 }
+@media (max-width: 768px) {
+    header {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 425px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+    }
+}
 .site-name{
     display: flex;
     align-items: center;
     margin-left: 90px;
     gap: 5px;
 }
+@media (max-width:768px){
+    .site-name {
+        margin-left: 20px;
+    }
+}
+@media (max-width:425px){
+    .site-name {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+}
 nav i{
     padding-right: 90px;
 }
+@media (max-width:768px){
+     nav i {
+        padding-right: 20px;
+    }
+}
+@media  (max-width:425px){
+    nav i {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+}
+
 .search-section{
     background-image:linear-gradient(rgba(0, 0, 0, 0.6)),url("./assests/images/header-bg.jpg");
     background-size: cover;
@@ -72,6 +110,60 @@ nav i{
   background-color: white;
   color: #f26c1d;
 }
+@media (max-width:768px){
+    .search-section {
+        height: 350px;
+    }
+
+    .search-section .search-here {
+        padding-top: 15%;
+    }
+
+    .search-here input {
+        margin-top: 30px;
+    
+    }
+
+    .search-here h2{
+    font-size: 25px;
+   }
+   .search-here p{
+    font-size: 15px;
+   }
+    .circle-button {
+        position: relative;
+        margin: 20px auto 0;
+        left: 0;
+    }
+}
+@media (max-width:425px){
+    .search-section {
+        height: 350px;
+    }
+
+    .search-section .search-here {
+        padding-top: 10%;
+    }
+
+    .search-here input {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+     .search-here h2{
+    font-size: 15px;
+   }
+   .search-here p{
+    font-size: 10px;
+   }
+
+    .circle-button {
+        margin-top: 15px;
+        left: 0;
+        position: relative;
+    }
+
+}
+
 .about-vegetarian{
     background-color: white;
     border: 2px solid  #f1a97e;
@@ -90,6 +182,31 @@ nav i{
     font-family: Georgia, serif;
     font-weight: normal;
     line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .about-vegetarian {
+        margin: 25px 30px;
+        font-size: 15px;
+    }
+
+    .about-vegetarian p {
+        line-height: 1.5;
+    }
+}
+@media (max-width: 480px) {
+    .about-vegetarian {
+        margin: 20px 15px;
+    }
+
+    .about-vegetarian h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .about-vegetarian p {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
 .meals-section h2{
     margin: 40px 60px;
@@ -128,4 +245,48 @@ nav i{
     padding-left: 8px;
     padding-right: 8px;
     font-family: Georgia, serif;
+}
+@media (max-width: 768px) {
+    .meals-section h2 {
+        margin: 30px 30px;
+        font-size: 18px;
+    }
+
+    .about-meals {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px 30px;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    .meal {
+        width: 160px;
+    }
+
+    .meal p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .meals-section h2 {
+        margin: 20px 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .about-meals {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .meal {
+        width: 140px;
+    }
+
+    .meal p {
+        font-size: 13px;
+        text-align: center;
+    }
 }
